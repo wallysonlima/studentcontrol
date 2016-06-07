@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SGA_Mobile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_iu__menu__docente">IU_Menu_Docente</string>
+</resources>
