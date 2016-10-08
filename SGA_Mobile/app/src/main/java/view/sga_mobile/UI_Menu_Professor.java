@@ -13,8 +13,13 @@ public class UI_Menu_Professor extends AppCompatActivity {
         setContentView(R.layout.activity_iu__menu__professor);
     }
 
-    public void criar_aula(View view) {
+    public void inserirPresenca(View view) {
         Intent intent = new Intent(this, UI_Criar_Aula.class);
+        startActivity(intent);
+    }
+
+    public void abrirActivityVerPresenca(View view) {
+        Intent intent = new Intent(this, UI_VerPresenca.class );
         startActivity(intent);
     }
 }

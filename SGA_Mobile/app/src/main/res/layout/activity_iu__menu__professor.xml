@@ -20,31 +20,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="criar_aula"/>
+        android:onClick="inserirPresenca"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alterar Presença"
-        android:id="@+id/buttonAlterar"
+        android:text="Ver Freq. Discente"
+        android:id="@+id/buttonVerPresenca"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/buttonInserir"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonInserir"
-        android:layout_alignEnd="@+id/buttonInserir" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Situação Aluno Presença"
-        android:id="@+id/buttonSituacao"
-        android:layout_below="@+id/buttonAlterar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/buttonAlterar"
-        android:layout_alignEnd="@+id/buttonAlterar" />
+        android:layout_alignEnd="@+id/buttonInserir"
+        android:onClick="abrirActivityVerPresenca"/>
 
     <ImageView
         android:layout_width="97dp"

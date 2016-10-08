@@ -3,7 +3,10 @@ package factory_method;
 import android.os.AsyncTask;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Created by wally on 13/12/15.
@@ -35,5 +38,14 @@ public class ExecuteDB extends AsyncTask<String, Void, ResultSet> {
         }
 
         return resultSet;
+    }
+
+    public void execute_Update() {
+
+        try {
+            connection.prepareStatement(query).executeUpdate();
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

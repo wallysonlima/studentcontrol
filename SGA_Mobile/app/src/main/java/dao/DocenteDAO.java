@@ -63,6 +63,8 @@ public class DocenteDAO {
             if ( rs != null ){
                 while ( rs.next() ) {
                     Docente obj = new Docente();
+                    obj.setCodigo_docente(rs.getInt("codigo_docente"));
+                    obj.setCodigo_depart(rs.getInt("codigo_depart"));
                     obj.setNome(rs.getString("nome_docente"));
                     obj.setEmail(rs.getString("email"));
                     obj.setSenha((rs.getString("senha")));

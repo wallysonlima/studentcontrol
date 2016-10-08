@@ -19,7 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".UI_Menu_Professor" />
-        <activity android:name=".UI_Criar_Aula"></activity>
+        <activity android:name=".UI_Criar_Aula" />
+        <activity android:name=".UI_Frequencia" />
+        <activity android:name=".UI_VerPresenca" />
+        <activity android:name=".UI_DiscenteFrequencia"></activity>
     </application>
 
 </manifest>

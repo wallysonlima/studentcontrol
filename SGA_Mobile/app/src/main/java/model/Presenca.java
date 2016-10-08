@@ -4,18 +4,13 @@ package model;
  * Created by wally on 27/12/15.
  */
 public class Presenca {
-    String presenca, ra;
+    String ra;
+    int codigo_aula;
+    boolean presenca;
 
-    public Presenca(String presenca, String ra) {
-        this.presenca = presenca;
+    public Presenca(String ra, int codigo_aula, boolean presenca) {
         this.ra = ra;
-    }
-
-    public String getPresenca() {
-        return presenca;
-    }
-
-    public void setPresenca(String presenca) {
+        this.codigo_aula = codigo_aula;
         this.presenca = presenca;
     }
 
@@ -25,5 +20,21 @@ public class Presenca {
 
     public void setRa(String ra) {
         this.ra = ra;
+    }
+
+    public int getCodigo_aula() {
+        return codigo_aula;
+    }
+
+    public void setCodigo_aula(int codigo_aula) {
+        this.codigo_aula = codigo_aula;
+    }
+
+    public boolean getPresenca() {
+        return presenca;
+    }
+
+    public void setPresenca(boolean presenca) {
+        this.presenca = presenca;
     }
 }

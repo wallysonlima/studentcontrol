@@ -14,11 +14,11 @@ import javax.xml.transform.Result;
  */
 public class DB extends _Default implements Runnable {
     private Connection conn;
-    private String host = "192.168.1.1";
+    private String host = "192.168.1.111";
     private String db = "projetoBancoI";
     private int port = 3306;
     private String user = "acesso_remoto";
-    private String password = "";
+    private String password = "Unesp2015&";
     private String url = "jdbc:mysql://%s:%d/%s";
 
     public DB() {
@@ -40,7 +40,7 @@ public class DB extends _Default implements Runnable {
         }
     }
 
-    private void conecta() {
+    public void conecta() {
         Thread thread = new Thread(this);
         thread.start();
 
@@ -79,19 +79,18 @@ public class DB extends _Default implements Runnable {
         return resultSet;
     }
 
-    public ResultSet execute(String query){
+    public void execute(String query){
         this.conecta();
-        ResultSet resultSet = null;
 
         try {
-            resultSet = new ExecuteDB(this.conn, query).execute().get();
+            new ExecuteDB(this.conn, query).execute_Update();
         } catch(Exception e) {
             this._status = false;
             this._mensagem = e.getMessage();
         }
-
-        return resultSet;
     }
 
-
+    public Connection getConn() {
+        return conn;
+    }
 }

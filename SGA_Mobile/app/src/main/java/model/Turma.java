@@ -7,13 +7,13 @@ import java.util.ArrayList;
  */
 public class Turma {
     String nome;
-    ArrayList<Aula> aulas = new ArrayList<Aula>();
-    int qtdeAulas;
+    int codigo_turma, codigo_disciplina, codigo_docente;
 
-    ArrayList<Avaliacao> avaliacoes = new ArrayList<Avaliacao>();
-
-    public Turma(String nome) {
+    public Turma(String nome, int codigo_turma, int codigo_disciplina, int codigo_docente) {
         this.nome = nome;
+        this.codigo_turma = codigo_turma;
+        this.codigo_disciplina = codigo_disciplina;
+        this.codigo_docente = codigo_docente;
     }
 
     public Turma() {}
@@ -26,28 +26,28 @@ public class Turma {
         this.nome = nome;
     }
 
-    public ArrayList<Aula> getAulas() {
-        return aulas;
+    public int getCodigo_turma() {
+        return codigo_turma;
     }
 
-    public void setAulas(ArrayList<Aula> aulas) {
-        this.aulas = aulas;
+    public void setCodigo_turma(int codigo_turma) {
+        this.codigo_turma = codigo_turma;
     }
 
-    public int getQtdeAulas() {
-        return qtdeAulas;
+    public int getCodigo_disciplina() {
+        return codigo_disciplina;
     }
 
-    public void setQtdeAulas(int qtdeAulas) {
-        this.qtdeAulas = qtdeAulas;
+    public void setCodigo_disciplina(int codigo_disciplina) {
+        this.codigo_disciplina = codigo_disciplina;
     }
 
-    public ArrayList<Avaliacao> getAvaliacoes() {
-        return avaliacoes;
+    public int getCodigo_docente() {
+        return codigo_docente;
     }
 
-    public void setAvaliacoes(ArrayList<Avaliacao> avaliacoes) {
-        this.avaliacoes = avaliacoes;
+    public void setCodigo_docente(int codigo_docente) {
+        this.codigo_docente = codigo_docente;
     }
 
     public String toString() {
